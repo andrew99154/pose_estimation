@@ -22,7 +22,7 @@ def calculate_angle(shoulder,elbow,wrist):
 
     return angle 
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 ## Setup mediapipe instance
 with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
     while cap.isOpened():
